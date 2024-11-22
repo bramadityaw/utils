@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+# Computes the disk usage of files and directories in the
+# current directory and displays them human-readably
+printf "Size\n"
+du -sh $(ls -m | tr ', ' ' ' | tr '\n' ' ')
